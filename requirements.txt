@@ -1,0 +1,6 @@
+streamlit>=1.31.0
+tensorflow-cpu
+numpy
+pillow
+scikit-learn
+gdown

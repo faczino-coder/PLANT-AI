@@ -1,0 +1,19 @@
+# Model file - too large for GitHub
+models/plant_disease_model.h5
+models/best_model.h5
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# System
+.DS_Store
+Thumbs.db
+*.log
