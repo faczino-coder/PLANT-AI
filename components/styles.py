@@ -560,5 +560,61 @@ def load_styles():
         border-radius: 50%;
         flex-shrink: 0;
     }
+    /* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+
+    .block-container {
+        padding: 0.5rem !important;
+    }
+
+    .hero-section {
+        min-height: 60vh !important;
+    }
+
+    .hero-title {
+        font-size: 2rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem !important;
+    }
+
+    .hero-visual {
+        display: none !important;
+    }
+
+    .hero-content {
+        max-width: 100% !important;
+        padding: 2rem 1.5rem !important;
+    }
+
+    .hero-mini-features {
+        gap: 1rem !important;
+    }
+
+    .white-section {
+        padding: 2rem 1rem !important;
+    }
+
+    .trust-bar {
+        padding: 1rem !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .landing-footer {
+        padding: 1rem !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .result-disease-name {
+        font-size: 1.2rem !important;
+    }
+
+    .chat-container {
+        height: 45vh !important;
+    }
+}
     </style>
     """
