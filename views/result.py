@@ -11,8 +11,18 @@ from components.sidebar import show_sidebar
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("models/plant_disease_model.h5")
-
+    import gdown
+    import os
+    model_path = "models/plant_disease_model.h5"
+    if not os.path.exists(model_path):
+        os.makedirs("models", exist_ok=True)
+        with st.spinner("⏳ Loading AI model for first time..."):
+            gdown.download(
+                "https://drive.google.com/uc?id=1afkCBR7LyK2kbg7LoxFZesLbN3ba1Sr2",
+                model_path,
+                quiet=False
+            )
+    return tf.keras.models.load_model(model_path)
 
 @st.cache_resource
 def load_configs():
